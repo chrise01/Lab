@@ -1,0 +1,2 @@
+#JSON Deployment of VCSA
+vcsa-deploy install c:\temp\VCSA.json --accept-eula --acknowledge-ceip
