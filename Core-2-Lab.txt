@@ -30,6 +30,9 @@ sudo iptables —-append FORWARD —-in-interface ens192 -j ACCEPT
 sudo iptables -L
 sudo iptables-save
 
+
+https://www.ascinc.com/blog/linux/how-to-build-a-simple-router-with-ubuntu-server-18-04-1-lts-bionic-beaver/
+
 ##NFS##
 
 ### use wget -N 
