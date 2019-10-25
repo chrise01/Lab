@@ -10,9 +10,11 @@ Int-1 - 192.168.2.1
 
 ##Routing##
 
-sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+#sudo echo 1 > /proc/sys/net/ipv4/ip_forward
 
-sysctl -p  
+sudo gedit /etc/sysctl.conf
+#change forwarder line
+sudo sysctl -p  
 
 sudo service iptables restart
 
@@ -39,6 +41,6 @@ sudo exportfs -ra
 sudo service nfs-kernel-server restart
 #Create folder on new disk ie NFS-4
 #On ESXi Host:
-esxcli storage nfs add --host=10.10.1.100 --share=/media/ub/Disk-1/NFS-1 --volume-name=NFS-1
+esxcli storage nfs add --host=192.168.2.1 --share=/media/ub/NFS-1/NFS-1 --volume-name=NFS-1
 
 
