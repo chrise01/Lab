@@ -1,5 +1,8 @@
 ####
 
+###
+Windows PXE - make sure to change the boot.cfg file in the esx6.5 folder to match the IP address
+
 
 UB
 sudo apt-get update -y && sudo apt-get upgrade -y
