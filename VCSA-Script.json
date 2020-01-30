@@ -3,11 +3,11 @@
                                                 "__comments": "Sample template to deploy a vCenter Server Appliance with an embedded Platform Services Controller on a vCenter Server instance.",
                                                 "new_vcsa": {
                                                            "esxi": {
-           							"hostname": "10.10.1.101",
-            							"username": "root",
-            							"password": "VMware1!",
-            							"deployment_network": "VM Network",
-            							"datastore": "NFS-1"
+           							                                           "hostname": "192.168.2.20",
+            							                                         "username": "root",
+            							                                         "password": "VMware1!",
+            							                                         "deployment_network": "VM Network",
+            							                                         "datastore": "Store-1"
                                                     },
                                                     "appliance": {
                                                         "__comments": [
@@ -20,10 +20,10 @@
                                                     "network": {
                                                         "ip_family": "ipv4",
                                                         "mode": "static",
-                                                        "ip": "10.10.1.200",
-                                                        "dns_servers": "10.10.1.2",
+                                                        "ip": "192.168.2.100",
+                                                        "dns_servers": "192.168.2.30",
                                                         "prefix": "24",
-                                                        "gateway": "10.10.1.100",
+                                                        "gateway": "192.168.2.1",
                                                         "system_name": "vcsa.corp.local"
                                                     },
                                                     "os": {
@@ -68,4 +68,3 @@
                                                     }
                                                 }
                                             }
-                                        

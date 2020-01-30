@@ -15,13 +15,12 @@ sudo sysctl -w net.ipv4.ip_forward=1
 sudo sysctl -p
 
 ---
-#Manual
+#Manual - Section
 sudo gedit /etc/default/ufw
-##change the DEFAULT_FORWARD_POLICY to “ACCEPT”:
+change the DEFAULT_FORWARD_POLICY to “ACCEPT”:
 
 sudo gedit /etc/ufw/before.rules
-#
-#
+
 # nat Table rules
 *nat
 :POSTROUTING ACCEPT [0:0]
@@ -33,9 +32,7 @@ sudo ufw disable && sudo ufw enable
 
 sudo iptables -L
 sudo ifdown ens160
-sudo ifdown end192
+sudo ifdown ens192
 sudo ifup ens160
-sudo ifup end192
+sudo ifup ens192
 sudo ufw disable && sudo ufw enable
-sudo exportfs -ra
-sudo service nfs-kernel-server restart
