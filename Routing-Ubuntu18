@@ -26,6 +26,7 @@ sudo gedit /etc/ufw/before.rules
 :POSTROUTING ACCEPT [0:0]
 # Forward traffic
 -A POSTROUTING -s 192.168.2.0/24 -o ens192 -j MASQUERADE
+####NEED TO #The Deny rules###
 COMMIT
 #
 sudo ufw disable && sudo ufw enable
