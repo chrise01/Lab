@@ -65,6 +65,9 @@ sudo sysctl -p
 
 ---
 #Manual - Section
+sudo nano /etc/ufw/sysctl.conf
+#remove #net.ipv4.ip_forward=1
+sudo sysctl -p
 sudo gedit /etc/default/ufw
 change the DEFAULT_FORWARD_POLICY to “ACCEPT”:
 
