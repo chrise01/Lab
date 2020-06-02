@@ -1,0 +1,10 @@
+###
+#Change .ini for OVA location and DC/vCenter details
+Powershell
+Set-ExecutionPolicy unrestricted
+#RUN#
+.\uagdeploy.ps1 -iniFile uag1-CE.ini
+
+Password, CEIP, Certs
+https://communities.vmware.com/docs/DOC-30835
+VMware1!
