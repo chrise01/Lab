@@ -46,12 +46,13 @@ https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
 ##run first
 sudo -i
-apt install git --yes
+sudo apt-get update --yes && apt install git --yes
 git clone https://github.com/chrise01/Lab.git
 cd Lab
 cd Folding
 chmod 774 run-1.sh
 ./run-1.sh
+
 
 sudo /etc/init.d/FAHClient stop
 wget config.xml

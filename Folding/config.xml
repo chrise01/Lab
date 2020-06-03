@@ -17,7 +17,7 @@
 
   <power value="full"/>
   <gpu value="false"/>      <!-- If true, attempt to autoconfigure GPUs -->
-  <fold-anon value="true"/>
+  <fold-anon value="false"/>
   <allow>192.168.2.100</allow>
   <password>VMware1!</password>
   <web-allow>192.168.2.100</web-allow>
