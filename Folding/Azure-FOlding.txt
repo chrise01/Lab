@@ -52,9 +52,22 @@ cd Lab
 cd Folding
 chmod 774 run-1.sh
 ./run-1.sh
+####
+###NVIDIA###
+apt install ubuntu-drivers-common --yes
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+sudo apt install ocl-icd-libopencl1 --yes
+sudo apt install ocl-icd-opencl-dev --yes
+###sudo apt install nvidia-driver-390
+####REBOOT###
+##NVIDIA Monitoring##
+##nvidia-smi -l 2##
+##May need to manually edit the config.xml file for multi GPU##
+sudo -i
 
 
 sudo /etc/init.d/FAHClient stop
-wget config.xml
+##wget config.xml
 sudo cp config.xml /etc/fahclient/config.xml
 sudo /etc/init.d/FAHClient start

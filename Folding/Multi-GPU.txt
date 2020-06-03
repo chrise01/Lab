@@ -1,0 +1,33 @@
+<config>
+  <!-- HTTP Server -->
+  <allow v='192.168.2.100'/>
+
+  <!-- Network -->
+  <proxy v=':8080'/>
+
+  <!-- Remote Command Server -->
+  <password v='VMware1!'/>
+
+  <!-- Slot Control -->
+  <power v='full'/>
+
+  <!-- User Information -->
+  <passkey v='d0cce284fe28752bd0cce284fe28752b'/>
+  <team v='52737'/>
+  <user v='CDE'/>
+
+  <!-- Web Server -->
+  <web-allow v='192.168.2.100'/>
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'/>
+  <slot id='1' type='GPU'>
+    <cuda-index v='1'/>
+    <gpu-index v='1'/>
+    <opencl-index v='1'/>
+  </slot>
+  <slot id='2' type='GPU'>
+    <cuda-index v='1'/>
+    <gpu-index v='2'/>
+    <opencl-index v='1'/>
+  </slot>
