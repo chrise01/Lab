@@ -46,8 +46,12 @@ https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
 ##run first
 sudo -i
-wget https://raw.githubusercontent.com/chrise01/Lab/master/run-1.sh
+apt install git
+git clone https://github.com/chrise01/Lab.git
+cd Lab
+cd Folding
 chmod 774 run-1.sh
+./run-1.sh
 
 sudo /etc/init.d/FAHClient stop
 wget config.xml
