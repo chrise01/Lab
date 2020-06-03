@@ -46,7 +46,7 @@ https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
 ##run first
 sudo -i
-apt install git
+apt install git --yes
 git clone https://github.com/chrise01/Lab.git
 cd Lab
 cd Folding
