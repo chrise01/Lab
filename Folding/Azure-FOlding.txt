@@ -46,13 +46,10 @@ https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
 ##run first
 sudo -i
-wget
+wget https://raw.githubusercontent.com/chrise01/Lab/master/run-1.sh
 chmod 774 run-1.sh
 
-###bash
-#!/bin/bash
-sudo apt-get update && sudo apt-get upgrade 
-sudo dpkg -i --force-depends fahclient_7.6.13_amd64.deb
-sudo dpkg -i --force-depends fahcontrol_7.6.13-1_all.deb
-sudo dpkg -i --force-depends fahviewer_7.6.13_amd64.deb
-apt --fix-broken install
+sudo /etc/init.d/FAHClient stop
+wget config.xml
+sudo cp config.xml /etc/fahclient/config.xml
+sudo /etc/init.d/FAHClient start
