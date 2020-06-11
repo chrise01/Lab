@@ -1,0 +1,45 @@
+<config>
+  <!--
+    This is a sample XML configuration file for the Folding@home
+    console client.  This configuration file format is explained
+    in detail in the Client User's Guide.
+
+    Copy this file to 'config.xml' and edit.
+
+    To set your user name, team and passkey just edit the text
+    in quotes below.
+  -->
+
+  <!-- User Information -->
+  <user value="CDE"/> <!-- Enter your user name here -->
+  <team value="52737"/>         <!-- Your team number -->
+  <passkey value="d0cce284fe28752bd0cce284fe28752b"/>       <!-- 32 hexadecimal characters if provided -->
+
+  <power value="full"/>
+  <gpu value="true"/>      <!-- If true, attempt to autoconfigure GPUs -->
+  <fold-anon value="false"/>
+  <allow>192.168.2.100</allow>
+  <password>VMware1!</password>
+  <web-allow>192.168.2.100</web-allow>
+    <!-- HTTP Server -->
+    <allow v='192.168.2.100'/>
+    <!-- Remote Command Server -->
+    <password v='VMware1!'/>
+
+    <!-- Slot Control -->
+    <power v='full'/>
+
+
+    <!-- Folding Slots -->
+    <slot id='0' type='CPU'/>
+    <slot id='1' type='GPU'>
+      <cuda-index v='1'/>
+      <gpu-index v='1'/>
+      <opencl-index v='1'/>
+    </slot>
+    <slot id='2' type='GPU'>
+      <cuda-index v='1'/>
+      <gpu-index v='2'/>
+      <opencl-index v='1'/>
+    </slot>
+  <config>

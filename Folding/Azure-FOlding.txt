@@ -1,24 +1,28 @@
+
+###NOTES###
 apt-get install openssh-server
 AzureUser
 AZureVMware1!
 
-20.36.208.241
+203.7.92.106
 
 chmod 400 AzureUser.pem
 
+apt install ubuntu-drivers-common --yes
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+sudo apt install ocl-icd-libopencl1 --yes
+sudo apt install ocl-icd-opencl-dev --yes
+###sudo apt install nvidia-driver-390
+####REBOOT###
+##NVIDIA Monitoring##
+##nvidia-smi -l 2##
+##May need to manually edit the config.xml file for multi GPU##
 
+
+ssh AzureUser@52.240.54.53
 ssh AzureUser@xx.x.x.x.x
 
-
-wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.13_amd64.deb
-wget https://download.foldingathome.org/releases/public/release/fahcontrol/debian-stable-64bit/v7.6/fahcontrol_7.6.13-1_all.deb
-wget https://download.foldingathome.org/releases/public/release/fahviewer/debian-stable-64bit/v7.6/fahviewer_7.6.13_amd64.deb
-
-sudo apt-get update && sudo apt-get upgrade 
-sudo dpkg -i --force-depends fahclient_7.6.13_amd64.deb
-sudo dpkg -i --force-depends fahcontrol_7.6.13-1_all.deb
-sudo dpkg -i --force-depends fahviewer_7.6.13_amd64.deb
-ath1:~$ sudo apt --fix-broken install
 
 VNC
 Remote password?
@@ -44,6 +48,9 @@ https://blog.hildenco.com/2019/07/creating-ubuntu-desktop-instance-on.html
 ##Root password
 https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
+##START###
+#Create VM, add firewall rule in Azure
+
 ##run first
 sudo -i
 sudo apt-get update --yes && apt install git --yes
@@ -51,23 +58,14 @@ git clone https://github.com/chrise01/Lab.git
 cd Lab
 cd Folding
 chmod 774 run-1.sh
-./run-1.sh
-####
-###NVIDIA###
-apt install ubuntu-drivers-common --yes
-ubuntu-drivers devices
-sudo ubuntu-drivers autoinstall
-sudo apt install ocl-icd-libopencl1 --yes
-sudo apt install ocl-icd-opencl-dev --yes
-###sudo apt install nvidia-driver-390
-####REBOOT###
-##NVIDIA Monitoring##
-##nvidia-smi -l 2##
-##May need to manually edit the config.xml file for multi GPU##
+chmod 774 GPU.sh
+./GPU.sh
 sudo -i
+./run-1.sh
+
 
 
 sudo /etc/init.d/FAHClient stop
-##wget config.xml
-sudo cp config.xml /etc/fahclient/config.xml
+sudo cp GPU-config.xml /etc/fahclient/config.xml
 sudo /etc/init.d/FAHClient start
+sudo /etc/init.d/FAHClient log
