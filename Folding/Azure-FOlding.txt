@@ -6,18 +6,7 @@ AZureVMware1!
 
 203.7.92.106
 
-chmod 400 AzureUser.pem
 
-apt install ubuntu-drivers-common --yes
-ubuntu-drivers devices
-sudo ubuntu-drivers autoinstall
-sudo apt install ocl-icd-libopencl1 --yes
-sudo apt install ocl-icd-opencl-dev --yes
-###sudo apt install nvidia-driver-390
-####REBOOT###
-##NVIDIA Monitoring##
-##nvidia-smi -l 2##
-##May need to manually edit the config.xml file for multi GPU##
 
 #svr5
 ssh AzureUser@20.185.6.158
@@ -27,30 +16,10 @@ ssh AzureUser@13.92.31.147
 ssh AzureUser@40.87.28.94
 
 
-
-VNC
-Remote password?
-
-sudo apt-get install python-gtk2 && sudo apt-get install python-gnome2
-
-sudo dpkg -i --force-depends fahclient_7.6.13_amd64.deb
-sudo dpkg -i --force-depends fahcontrol_7.6.13-1_all.deb
-sudo dpkg -i --force-depends fahviewer_7.6.13_amd64.deb
-
-
-Package python-gtk2 is not installed.
-  Package python-gnome2 is not installed
-
 #Removes
 sudo dpkg -P --force-depends fahviewer
-./FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd0cce284fe28752b --gpu=false --smp=true
+#./FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd0cce284fe28752b --gpu=false --smp=true
 
-d0cce284fe28752bd0cce284fe28752b
-
-https://blog.hildenco.com/2019/07/creating-ubuntu-desktop-instance-on.html
-
-##Root password
-https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
 ##START###
 #Create VM, add firewall rule in Azure
