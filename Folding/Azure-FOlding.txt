@@ -19,9 +19,13 @@ sudo apt install ocl-icd-opencl-dev --yes
 ##nvidia-smi -l 2##
 ##May need to manually edit the config.xml file for multi GPU##
 
+#svr5
+ssh AzureUser@20.185.6.158
+#svr3
+ssh AzureUser@13.92.31.147
+#svr4
+ssh AzureUser@40.87.28.94
 
-ssh AzureUser@52.240.54.53
-ssh AzureUser@xx.x.x.x.x
 
 
 VNC
@@ -50,6 +54,7 @@ https://www.cyberciti.biz/faq/change-root-password-ubuntu-linux/
 
 ##START###
 #Create VM, add firewall rule in Azure
+#Go single GPU - easier
 
 ##run first
 sudo -i
@@ -61,11 +66,10 @@ chmod 774 run-1.sh
 chmod 774 GPU.sh
 ./GPU.sh
 sudo -i
+cd Lab
+cd Folding
 ./run-1.sh
-
-
-
 sudo /etc/init.d/FAHClient stop
-sudo cp GPU-config.xml /etc/fahclient/config.xml
+sudo cp config.xml /etc/fahclient/config.xml
 sudo /etc/init.d/FAHClient start
 sudo /etc/init.d/FAHClient log
