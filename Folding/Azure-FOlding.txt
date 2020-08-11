@@ -4,16 +4,16 @@ apt-get install openssh-server
 AzureUser
 AZureVMware1!
 
-203.7.92.106
+203.7.65.71
 
 
 
 #svr1
-ssh AzureUser@13.72.85.18
+ssh AzureUser@52.152.221.171
 #svr2
-ssh AzureUser@13.68.157.188
+ssh AzureUser@13.82.208.230
 #svr3
-ssh AzureUser@52.186.148.220
+ssh AzureUser@23.96.26.120
 
 
 #Removes
