@@ -11,7 +11,7 @@
         },
         "adminUsername": {
             "type": "string",
-            "defaultValue": "AzureUser"
+            "defaultValue": "azureuser"
             "metadata": {
                 "description": "Username for the Virtual Machine."
             }
@@ -62,28 +62,28 @@
         },
         "VmSize": {
             "type": "string",
-            "defaultValue": "Standard_B2s",
+            "defaultValue": "Standard_NC6_Promo",
             "metadata": {
                 "description": "The size of the VM"
             }
         },
         "virtualNetworkName": {
             "type": "string",
-            "defaultValue": "vNet",
+            "defaultValue": "CERG2vnet252",
             "metadata": {
                 "description": "Name of the VNET"
             }
         },
         "subnetName": {
             "type": "string",
-            "defaultValue": "Subnet",
+            "defaultValue": "default",
             "metadata": {
                 "description": "Name of the subnet in the virtual network"
             }
         },
         "networkSecurityGroupName": {
             "type": "string",
-            "defaultValue": "SecGroupNet",
+            "defaultValue": "FAH-SecGroupNet",
             "metadata": {
                 "description": "Name of the Network Security Group"
             }
@@ -94,7 +94,7 @@
         "networkInterfaceName": "[concat(parameters('vmName'),'NetInt')]",
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'), parameters('subnetName'))]",
         "osDiskType": "Standard_LRS",
-        "subnetAddressPrefix": "10.1.0.0/24",
+        "subnetAddressPrefix": "10.0.1.0/24",
         "addressPrefix": "10.1.0.0/16",
         "linuxConfiguration": {
             "disablePasswordAuthentication": true,
