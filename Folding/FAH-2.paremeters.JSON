@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "networkInterfaceName": {
+            "value": "fahsv1751"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/networkSecurityGroups/FAH-SecGroupNet"
+        },
+        "subnetName": {
+            "value": "sub1"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/virtualNetworks/CERG2vnet2"
+        },
+        "publicIpAddressName": {
+            "value": "fahsv1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "fahsv1"
+        },
+        "virtualMachineComputerName": {
+            "value": "fahsv1"
+        },
+        "virtualMachineRG": {
+            "value": "CE-RG-2"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_NC6_Promo"
+        },
+        "adminUsername": {
+            "value": "azureuser"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "cerg2diag128"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Storage/storageAccounts/cerg2diag128"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "Cen. Australia Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "chrise@vmware.com"
+        }
+    }
+}
