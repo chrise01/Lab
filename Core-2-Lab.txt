@@ -22,6 +22,7 @@ sudo sysctl -p  
 sudo service iptables restart
 
 
+
 sudo route add -net 10.10.0.0 netmask 255.255.0.0 gw 192.168.2.200
 
 sudo iptables --table nat —append POSTROUTING —-out-interface ens160 -j MASQUERADE
