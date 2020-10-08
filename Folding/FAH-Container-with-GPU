@@ -5,6 +5,10 @@ sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce -y
 sudo docker pull vmware/folding-at-home:latest
-sudo docker run --rm -it -p7396:7396 vmware/folding-at-home:latest  --user=CDE --team=52737 --passkey=d0cce284fe28752bd0cce284fe28752b --gpu=true --smp=true --power=full --password=VMware1!
+
+sudo docker run --rm -it -p36330:36330 vmware/folding-at-home:latest  --user=CDE --team=52737 --passkey=d0cce284fe28752bd0cce284fe28752b --gpu=true --smp=true --power=full --password=VMware1!
+
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+#need to put the NVIDIA drivers in the docker image - how?

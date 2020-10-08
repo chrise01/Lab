@@ -9,11 +9,11 @@ AZureVMware1!
 
 
 #svr1
-ssh AzureUser@52.152.221.171
+ssh AzureUser@20.185.46.216
 #svr2
-ssh AzureUser@13.82.208.230
+ssh AzureUser@137.135.120.180
 #svr3
-ssh AzureUser@23.96.26.120
+ssh AzureUser@40.117.235.211
 
 
 #Removes
