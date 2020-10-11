@@ -12,3 +12,27 @@ sudo docker run --rm -it -p36330:36330 vmware/folding-at-home:latest  --user=CDE
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
 #need to put the NVIDIA drivers in the docker image - how?
+Use a NVIDIA base image for the container - then create with FAH client?
+
+https://towardsdatascience.com/how-to-properly-use-the-gpu-within-a-docker-container-4c699c78c6d1
+
+##run first
+sudo -i
+sudo apt-get update --yes && apt install git --yes
+git clone https://github.com/chrise01/Lab.git
+cd Lab
+cd Folding
+chmod 774 run-1.sh
+chmod 774 GPU.sh
+./GPU.sh
+#reboots
+
+
+sudo -i
+cd Lab
+cd Folding
+./run-1.sh
+sudo /etc/init.d/FAHClient stop
+sudo cp config.xml /etc/fahclient/config.xml
+sudo /etc/init.d/FAHClient start
+sudo /etc/init.d/FAHClient log
