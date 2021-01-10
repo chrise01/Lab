@@ -9,17 +9,18 @@ AZureVMware1!
 
 
 #svr1
-ssh AzureUser@13.68.136.24
+ssh AzureUser@20.185.36.233
 #svr2
-ssh AzureUser@40.121.48.254
+ssh AzureUser@20.185.67.22
 #svr3
-ssh AzureUser@13.68.154.242
+ssh AzureUser@20.185.39.234
 
 
 #Removes
 sudo dpkg -P --force-depends fahviewer
-#./FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd0cce284fe28752b --gpu=false --smp=true
+#./FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd0cce284fe28752b --gpu=true --smp=true start log
 
+sudo ./etc/init.d/FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd0cce284fe28752b --gpu=true --smp=true start log
 
 ##START###
 #Create VM, add firewall rule in Azure
@@ -34,10 +35,12 @@ cd Folding
 chmod 774 run-1.sh
 chmod 774 GPU.sh
 ./GPU.sh
+#
 sudo -i
 cd Lab
 cd Folding
 ./run-1.sh
+#
 sudo /etc/init.d/FAHClient stop
 sudo cp config.xml /etc/fahclient/config.xml
 sudo /etc/init.d/FAHClient start
