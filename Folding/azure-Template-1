@@ -29,7 +29,7 @@
     {
   "type": "Microsoft.Storage/storageAccounts",
   "apiVersion": "2019-04-01",
-  "name": "cestorage1",
+  "name": "cestorage2",
   "location": "eastus",
   "sku": {
     "name": "Standard_LRS"
