@@ -23,9 +23,11 @@ ssh AzureUser@52.142.8.129
 #svr3
 ssh AzureUser@40.88.3.29
 
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureUser@13.82.16.74
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" AzureUser@13.82.16.74
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" AzureUser@13.82.16.74
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.82.16.74
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.142.8.129
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@40.88.3.29
+
+
 
 #Removes
 sudo dpkg -P --force-depends fahviewer
@@ -40,9 +42,10 @@ sudo ./etc/init.d/FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd
 ##run first
 sudo -i
 sudo apt-get update --yes && apt install git --yes
-git clone https://github.com/chrise01/Lab.git
+git clone https://github.com/chrise01/Lab/Folding/Azure.git
 cd Lab
 cd Folding
+cd Azure
 chmod 774 run-1.sh
 chmod 774 GPU.sh
 ./GPU.sh
@@ -50,8 +53,8 @@ chmod 774 GPU.sh
 sudo -i
 cd Lab
 cd Folding
+cd Azure
 ./run-1.sh
-#
 sudo /etc/init.d/FAHClient stop
 sudo cp config.xml /etc/fahclient/config.xml
 sudo /etc/init.d/FAHClient start
