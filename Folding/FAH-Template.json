@@ -8,6 +8,9 @@
         "networkInterfaceName": {
             "type": "string"
         },
+          "resourceGroupName": {
+              "type": "string"
+        },
         "networkSecurityGroupId": {
             "type": "string"
         },

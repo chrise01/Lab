@@ -9,12 +9,23 @@ AZureVMware1!
 
 
 #svr1
-ssh AzureUser@20.185.36.233
+ssh AzureUser@13.82.16.74
 #svr2
-ssh AzureUser@20.185.67.22
+ssh AzureUser@52.142.8.129
 #svr3
-ssh AzureUser@20.185.39.234
+ssh AzureUser@40.88.3.29
 
+
+#svr1
+ssh -i ce-key-1.pem AzureUser@13.82.16.74
+#svr2
+ssh AzureUser@52.142.8.129
+#svr3
+ssh AzureUser@40.88.3.29
+
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureUser@13.82.16.74
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" AzureUser@13.82.16.74
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" AzureUser@13.82.16.74
 
 #Removes
 sudo dpkg -P --force-depends fahviewer

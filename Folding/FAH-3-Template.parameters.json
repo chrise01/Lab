@@ -9,7 +9,7 @@
               "value": "CE-RG-2"
         },
         "networkInterfaceName": {
-            "value": "fahsvr2881"
+            "value": "fahsvr3881"
         },
         "networkSecurityGroupId": {
             "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/networkSecurityGroups/FAH-SecGroupNet"
@@ -21,7 +21,7 @@
             "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/virtualNetworks/CERG2vnet2"
         },
         "publicIpAddressName": {
-            "value": "fahsvr2-ip"
+            "value": "fahsvr3-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -30,10 +30,10 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "fahsvr2"
+            "value": "fahsvr3"
         },
         "virtualMachineComputerName": {
-            "value": "fahsvr2"
+            "value": "fahsvr3"
         },
         "virtualMachineRG": {
             "value": "CE-RG-2"
