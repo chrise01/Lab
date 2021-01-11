@@ -1,0 +1,16 @@
+azureuser@23.96.96.244
+
+SSH access with private key
+
+#Create a key pair in azure
+#Download to local device
+#change permissions
+
+
+chmod 400 ce-key-1.pem
+# run the following
+ssh -i ce-key-1.pem azureuser@23.96.96.244
+
+ssh -i ce-key-1.pem azureuser@40.87.110.247
+
+az keyvault update -n ce-key-vault-RG-2 -g CE-RG-2 --set properties.enabledForDeployment=true
