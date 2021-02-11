@@ -26,9 +26,9 @@ ssh AzureUser@40.88.3.29
 ------
 #SSH
 
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.188.203.85
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.188.202.186
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.188.203.86
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@40.87.6.82
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.68.195.31
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.68.205.57
 
 
 
@@ -59,6 +59,7 @@ cd Lab
 cd Folding
 cd Azure
 ./run-1.sh
+#
 sudo /etc/init.d/FAHClient stop
 sudo cp config.xml /etc/fahclient/config.xml
 sudo /etc/init.d/FAHClient start

@@ -54,7 +54,7 @@
             "value": "Enabled"
         },
         "autoShutdownTime": {
-            "value": "23:00"
+            "value": "14:00"
         },
         "autoShutdownTimeZone": {
             "value": "Cen. Australia Standard Time"
