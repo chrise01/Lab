@@ -9,26 +9,26 @@ AZureVMware1!
 
 #OLD
 #svr1
-ssh AzureUser@13.82.16.74
+ssh AzureUser@52.255.188.9
 #svr2
-ssh AzureUser@52.142.8.129
+ssh AzureUser@52.249.254.33
 #svr3
-ssh AzureUser@40.88.3.29
+ssh AzureUser@52.152.231.154
 
-
+#OLD
 #svr1
-ssh -i ce-key-1.pem AzureUser@13.82.16.74
+ssh -i ce-key-1.pem AzureUser@52.255.188.9
 #svr2
-ssh AzureUser@52.142.8.129
+ssh -i ce-key-1.pem AzureUser@52.249.254.33
 #svr3
-ssh AzureUser@40.88.3.29
+ssh -i ce-key-1.pem AzureUser@52.152.231.154
 
 ------
 #SSH
 
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@40.87.6.82
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.68.195.31
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.68.205.57
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.255.188.9
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.249.254.33
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@52.152.231.154
 
 
 
