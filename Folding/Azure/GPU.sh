@@ -1,6 +1,6 @@
 #!/bin/bash
-apt install ubuntu-drivers-common --yes
-ubuntu-drivers devices
+#apt install ubuntu-drivers-common --yes
+#ubuntu-drivers devices
 sudo apt update
 sudo apt upgrade
 sudo apt install nvidia-driver-460
