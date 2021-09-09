@@ -28,7 +28,7 @@ ssh -i ce-key-1.pem AzureUser@52.152.231.154
 
 ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@40.121.91.85
 ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.82.106.237
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.92.125.199
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.92.236.166
 
 
 
@@ -44,7 +44,7 @@ sudo ./etc/init.d/FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd
 
 ##run first
 sudo -i
-sudo apt-get update --yes && apt install git --yes
+sudo apt-get update --yes && apt-get upgrade --yes && apt install git --yes
 git clone https://github.com/chrise01/Lab.git
 cd Lab
 cd Folding
