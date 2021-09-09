@@ -1,5 +1,5 @@
 #!/bin/bash
-#apt install ubuntu-drivers-common --yes
+apt install ubuntu-drivers-common --yes
 #ubuntu-drivers devices
 sudo apt update
 sudo apt upgrade
