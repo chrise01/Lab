@@ -23,12 +23,14 @@ ssh -i ce-key-1.pem AzureUser@52.249.254.33
 #svr3
 ssh -i ce-key-1.pem AzureUser@52.152.231.154
 
+https://ubuntu.com/blog/getting-started-with-cuda-on-ubuntu-on-wsl-2
+
 ------
 #SSH
 
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@40.121.91.85
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.82.106.237
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@13.90.202.247
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@20.119.37.65
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@20.119.37.175
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@20.85.221.11
 
 
 
@@ -44,7 +46,9 @@ sudo ./etc/init.d/FAHClient --user=CDE --team=52737 --passkey= d0cce284fe28752bd
 
 ##run first
 sudo -i
-sudo apt-get update --yes && apt-get upgrade --yes && apt install git --yes
+#sudo apt-get update --yes
+#sudo apt-get upgrade --yes
+sudo apt install git --yes
 git clone https://github.com/chrise01/Lab.git
 cd Lab
 cd Folding
