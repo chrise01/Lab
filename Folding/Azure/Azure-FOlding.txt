@@ -31,7 +31,7 @@ https://ubuntu.com/blog/getting-started-with-cuda-on-ubuntu-on-wsl-2
 ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@20.124.211.197
 ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@20.124.208.67
 
-ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@40.87.45.69
+ssh -i ~/"OneDrive - VMware, Inc/VMware/Lab/Azure-Keys/ce-key-1.pem" azureuser@20.127.136.63
 
 
 
