@@ -1,0 +1,6 @@
+
+#UB deployment
+#Update
+sudo apt get updates
+#containerd install
+sudo apt install containerd
