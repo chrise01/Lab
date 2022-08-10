@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "resourceGroupName": {
+              "value": "CE-RG-2"
+        },
+        "networkInterfaceName": {
+            "value": "fahsvr2881"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/networkSecurityGroups/FAH-SecGroupNet"
+        },
+        "subnetName": {
+            "value": "sub1"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/virtualNetworks/CERG2vnet2"
+        },
+        "publicIpAddressName": {
+            "value": "fahsvr2-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "fahsvr2"
+        },
+        "virtualMachineComputerName": {
+            "value": "fahsvr2"
+        },
+        "virtualMachineRG": {
+            "value": "CE-RG-2"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_NC6_Promo"
+        },
+        "adminUsername": {
+            "value": "azureuser"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCq7315BlERV6Y9Q1xpM4F66Fo5s3S7/yNh6EimQicUhVB2Uhq/tKBgsDaNoNsQGAp5bDo0a/TJRX/Le90GqtpGcSXJTvT0UpUwSYnu1HfkbN5PXZShX3L8Dy/vlyUejN4KMDB8YVhpVg69jP1GbVEGIyrHw54m0x764i0nKhKd1oJGPRjzk8g6POqaExuLe897G/UwiIN+cS8vBUOS7YOA/fsb9yqTXpmqTQhRueEHeLufpVRpB78vlAozw81Z4zPuPhwnOe24lyoMGZ1qKJP6dkMUIei9UFt1VMuHgKFt3NhfmPiIYMAu+S0BKo3KaqihyCwyo9lC2al5/TcP1tZxkK6QSp5LFDWwBj5jP75zRi13cCW26jN98LNH1ECrZ9nG9hWFtQGMnGrdzlQ9oCLq6TmB2gtYg5LPqKebIT66jjE4E/D+UbDz+yPAiW9hhoNj7sON8WQKkB6y5+EhfS7hrpVd/Dhic17Ljv49d6qKHpzZ2tAJSxvmCpJBW0LSjvc= generated-by-azure"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "14:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "Cen. Australia Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "chrise@vmware.com"
+        }
+    }
+}

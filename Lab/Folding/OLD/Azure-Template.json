@@ -1,0 +1,71 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_fathsvr3_name": {
+            "defaultValue": "fathsvr3",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2019-07-01",
+            "name": "[parameters('virtualMachines_fathsvr3_name')]",
+            "location": "eastus",
+            "tags": {
+                "Project": "FAH"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_NC6_Promo"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "Canonical",
+                        "offer": "UbuntuServer",
+                        "sku": "18.04-LTS",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "osType": "Linux",
+                        "name": "[concat(parameters('virtualMachines_fathsvr3_name'), '_OsDisk_1_4131d0f1359a4c85a35421fc2af9bd28')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "storageAccountType": "StandardSSD_LRS",
+                            "id": "[parameters('disks_fathsvr3_OsDisk_1_4131d0f1359a4c85a35421fc2af9bd28_externalid')]"
+                        },
+                        "diskSizeGB": 30
+                    },
+                    "dataDisks": []
+                },
+                "osProfile": {
+                    "computerName": "[parameters('virtualMachines_fathsvr3_name')]",
+                    "adminUsername": "AzureUser",
+                    "linuxConfiguration": {
+                        "disablePasswordAuthentication": false,
+                        "provisionVMAgent": true
+                    },
+                    "secrets": [],
+                    "allowExtensionOperations": true,
+                    "requireGuestProvisionSignal": true
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[parameters('networkInterfaces_fathsvr3783_externalid')]"
+                        }
+                    ]
+                },
+                "diagnosticsProfile": {
+                    "bootDiagnostics": {
+                        "enabled": true,
+                        "storageUri": "https://cerg2diag128.blob.core.windows.net/"
+                    }
+                }
+            }
+        }
+    ]
+}

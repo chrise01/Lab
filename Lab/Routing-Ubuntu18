@@ -1,0 +1,39 @@
+--------
+#OLD
+-----
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo sysctl -p
+
+sudo iptables --table nat -append POSTROUTING --out-interface ens192 -j MASQUERADE
+sudo iptables --append FORWARD --in-interface ens160 -j ACCEPT
+---------------
+
+sudo ufw enable
+sudo ufw logging on
+
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo sysctl -p
+
+---
+#Manual - Section
+sudo gedit /etc/default/ufw
+change the DEFAULT_FORWARD_POLICY to “ACCEPT”:
+
+sudo gedit /etc/ufw/before.rules
+
+# nat Table rules
+*nat
+:POSTROUTING ACCEPT [0:0]
+# Forward traffic
+-A POSTROUTING -s 192.168.2.0/24 -o ens192 -j MASQUERADE
+####NEED TO #The Deny rules###
+COMMIT
+#
+sudo ufw disable && sudo ufw enable
+
+sudo iptables -L
+sudo ifdown ens160
+sudo ifdown ens192
+sudo ifup ens160
+sudo ifup ens192
+sudo ufw disable && sudo ufw enable

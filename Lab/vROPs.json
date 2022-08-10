@@ -1,0 +1,48 @@
+{
+    "client_token": "string",
+    "deployment_spec": {
+        "accept_all_EULA": true,
+        "additional_parameters": [
+            {
+                "@class": "com.vmware.vcenter.ovf.ovf_params",
+                "type": "string"
+            },
+            {
+                "@class": "com.vmware.vcenter.ovf.ovf_params",
+                "type": "string"
+            }
+        ],
+        "annotation": "string",
+        "default_datastore_id": "obj-103",
+        "flags": [
+            "string",
+            "string"
+        ],
+        "locale": "string",
+        "name": "string",
+        "network_mappings": [
+            {
+                "key": "string",
+                "value": "obj-103"
+            }
+        ],
+        "storage_mappings": [
+            {
+                "key": "string",
+                "value": {
+                    "datastore_id": "obj-103",
+                    "provisioning": "thin",
+                    "storage_profile_id": "obj-103",
+                    "type": "DATASTORE"
+                }
+            }
+        ],
+        "storage_profile_id": "obj-103",
+        "storage_provisioning": "thin"
+    },
+    "target": {
+        "folder_id": "obj-103",
+        "host_id": "obj-103",
+        "resource_pool_id": "obj-103"
+    }
+}
