@@ -9,7 +9,7 @@
               "value": "CE-RG-2"
         },
         "networkInterfaceName": {
-            "value": "fahsvr4881"
+            "value": "fahsv74881"
         },
         "networkSecurityGroupId": {
             "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/networkSecurityGroups/FAH-SecGroupNet"
@@ -21,7 +21,7 @@
             "value": "/subscriptions/ea6a2698-913e-4eae-801a-35de7fe19f32/resourceGroups/CE-RG-2/providers/Microsoft.Network/virtualNetworks/CERG2vnet2"
         },
         "publicIpAddressName": {
-            "value": "fahsvr4-ip"
+            "value": "fahsvr7-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -30,10 +30,10 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "fahsvr4"
+            "value": "fahsvr7"
         },
         "virtualMachineComputerName": {
-            "value": "fahsvr4"
+            "value": "fahsvr7"
         },
         "virtualMachineRG": {
             "value": "CE-RG-2"
@@ -42,16 +42,13 @@
             "value": "StandardSSD_LRS"
         },
         "virtualMachineSize": {
-            "value": "Standard_NV12_Promo"
+            "value": "Standard_NC4as_T4_v3"
         },
         "adminUsername": {
             "value": "azureuser"
         },
         "adminPublicKey": {
             "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCq7315BlERV6Y9Q1xpM4F66Fo5s3S7/yNh6EimQicUhVB2Uhq/tKBgsDaNoNsQGAp5bDo0a/TJRX/Le90GqtpGcSXJTvT0UpUwSYnu1HfkbN5PXZShX3L8Dy/vlyUejN4KMDB8YVhpVg69jP1GbVEGIyrHw54m0x764i0nKhKd1oJGPRjzk8g6POqaExuLe897G/UwiIN+cS8vBUOS7YOA/fsb9yqTXpmqTQhRueEHeLufpVRpB78vlAozw81Z4zPuPhwnOe24lyoMGZ1qKJP6dkMUIei9UFt1VMuHgKFt3NhfmPiIYMAu+S0BKo3KaqihyCwyo9lC2al5/TcP1tZxkK6QSp5LFDWwBj5jP75zRi13cCW26jN98LNH1ECrZ9nG9hWFtQGMnGrdzlQ9oCLq6TmB2gtYg5LPqKebIT66jjE4E/D+UbDz+yPAiW9hhoNj7sON8WQKkB6y5+EhfS7hrpVd/Dhic17Ljv49d6qKHpzZ2tAJSxvmCpJBW0LSjvc= generated-by-azure"
-        },
-        "autoShutdownNotificationEmail": {
-            "value": "chrise@vmware.com"
         }
     }
 }
